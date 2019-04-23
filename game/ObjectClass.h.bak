@@ -1,0 +1,164 @@
+#pragma once
+//-----------------------------------------------------------
+//Include Head File
+//-----------------------------------------------------------
+#include<ddraw.h>
+#include<string>
+
+
+//-----------------------------------------------------------
+//Include My Head File
+//-----------------------------------------------------------
+#include"position.h"
+#include"CollideArea.h"
+#include"EnumGroup.h"
+
+
+//-----------------------------------------------------------
+//Object State struct
+//-----------------------------------------------------------
+struct STObjState 
+{
+	bool bHasBeenCollide = FALSE;
+	bool bHasBeenAttack = FALSE;
+	
+	void ResetState() 
+	{
+		bHasBeenCollide = FALSE;
+		bHasBeenAttack = FALSE;
+	}
+};
+
+
+
+
+//-----------------------------------------------------------
+//Object Class
+//-----------------------------------------------------------
+class CObject : public CPosition
+{
+	//---------------------------------------------------------
+	//Object Create
+	//----------------------------------------------------------
+public:
+	CObject();
+	virtual ~CObject();
+
+	//Init
+	void Init(int x, int y, DWORD width, DWORD Height);
+
+	//delete
+	void Destroy();
+
+
+	bool m_bDrawFirst;
+	//---------------------------------------------------------
+	//Object Basic
+	//----------------------------------------------------------	
+protected:
+	//pixel size
+	DWORD m_dwWidth;
+	DWORD m_dwHeight;
+
+	//bitmap rect
+	RECT m_rectPos;
+
+	//object count
+	static DWORD m_dwObjCount;
+
+	//
+	
+public:
+	
+	//Reset State
+	void ResetState();
+	//---------------------------------------------------------
+	//Collide Part
+	//---------------------------------------------------------
+public:
+	CCollideArea *GetCollideArea()const;
+
+
+protected:
+	void CreateCollideArea(bool Dynamic);
+	void DestroyCollideArea();
+
+	//collide Area
+	CCollideArea *m_pAreaCollide;
+
+	//---------------------------------------------------------
+	//object State 
+	//---------------------------------------------------------
+public:
+	bool IsObjNearBy(CObject*obj)const;
+
+	enObjectType GetObjType() const;
+
+	STObjState GetObjState() const;
+
+	enObjectForce GetObjForce() const;
+
+	bool IsAlive()const;
+
+	POINTFLOAT GetPatrolPoint()const;
+
+	RECT GetDrawRect()const;
+
+	void MarkObjectHasBeenCollide();
+
+	void MarkObjectHasBeenAttack();
+
+	bool IsMoveAble()const;
+
+	LPCSTR GetName();
+
+	void SetName(string);
+
+protected:
+	//Object Name
+	string m_strName;
+	//Object Birth Position
+	POINTFLOAT m_pointfPatrol;	
+	//Object Type
+	enObjectType m_enObjType;
+	//Object State
+	STObjState m_stObjState;
+	//Object force
+	enObjectForce m_enForce;
+	//Object alive
+	bool m_bIsAlive;
+	//Object Controlable
+	bool m_bControlAble;
+	//Object Moveable
+	bool m_bMoveAble;
+
+	//---------------------------------------------------------
+	//Object Direction
+	//---------------------------------------------------------
+public:
+	enDirection GetCurDir() const;
+protected:
+	bool SetObjectDir(enDirection);
+
+	void LockDir();
+	void UnLockDir();
+private:
+	//object direction
+	enDirection m_enDir;
+	bool m_bLockDir;
+
+public:
+	//---------------------------------------------------------
+	//Object Update & Draw
+	//---------------------------------------------------------
+	virtual HRESULT DrawObject(LPDIRECTDRAWSURFACE7 DestSuf, DWORD DrawSetting) = 0;
+
+	bool DrawCollideArea(LPDIRECTDRAWSURFACE7 suf);
+
+	//Update	
+	void UpdateObject();
+
+	void UpdatePatrolPoint();
+	//Update All
+	virtual void UpdateAll() = 0;
+};

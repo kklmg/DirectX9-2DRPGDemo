@@ -1,0 +1,217 @@
+//-----------------------------------------------------------
+//Include My Head File
+//-----------------------------------------------------------
+#include"ObjectClass.h"
+#include"RectMath.h"
+#include"blit.h"
+#include"Global_data.h"
+
+
+//-----------------------------------------------------------
+//Object State Value
+//-----------------------------------------------------------
+DWORD CObject::m_dwObjCount=0;
+
+
+
+//-----------------------------------------------------------
+//Get object Create
+//-----------------------------------------------------------
+CObject::CObject()
+	: m_enObjType(enObjectType::eOTUnKnown), m_pointfPatrol({0,0}), m_bIsAlive(TRUE), m_strName("UnKnown"),
+	m_dwWidth(0), m_dwHeight(0), m_enDir(enDirection::eUp), m_rectPos({0,0,0,0}), m_enForce(enObjectForce::eForFNeutral),
+	m_pAreaCollide(NULL), m_bControlAble(FALSE), m_bDrawFirst(FALSE), m_bMoveAble(TRUE), m_bLockDir(FALSE)
+{
+	
+	//count obj
+	m_dwObjCount++;
+
+	//save in list
+	
+}
+
+CObject::~CObject()
+{
+	DestroyCollideArea();
+
+	m_dwObjCount--;
+}
+
+void CObject::Init(int x, int y, DWORD Width, DWORD Height) 
+{
+	SetPosition(x, y);
+
+	m_dwWidth = Width;
+	m_dwHeight = Height;
+
+	UpdateObject();
+
+	m_pointfPatrol = CPosition::GetPosition();
+}
+
+void CObject::Destroy()
+{
+}
+
+
+
+//---------------------------------------------------------
+//Object Direction
+//---------------------------------------------------------
+
+enDirection CObject::GetCurDir() const 
+{
+	return m_enDir;
+}
+
+bool CObject::SetObjectDir(enDirection dir) 
+{
+	if (m_bLockDir)return FALSE;
+	else
+	{
+		m_enDir = dir;
+		return TRUE;
+	}
+}
+
+void CObject::LockDir() 
+{
+	m_bLockDir = TRUE;
+}
+void CObject::UnLockDir() 
+{
+	m_bLockDir = FALSE;
+}
+
+//-----------------------------------------------------------
+//Get object State 
+//-----------------------------------------------------------
+enObjectType CObject::GetObjType() const
+{
+	return m_enObjType;
+}
+
+STObjState CObject::GetObjState() const
+{
+	return m_stObjState;
+
+}
+
+enObjectForce CObject::GetObjForce() const
+{
+	return m_enForce;
+}
+
+RECT CObject::GetDrawRect()const
+{
+	return m_rectPos;
+}
+
+POINTFLOAT CObject::GetPatrolPoint()const
+{
+	return m_pointfPatrol;
+}
+
+bool CObject::IsAlive() const
+{
+	return m_bIsAlive;
+}
+
+bool CObject::IsObjNearBy(CObject*obj)const
+{
+	if (obj == NULL)return FALSE;
+	RECT NearRect = GetScaledRect(m_rectPos, 1.2, 1.2);
+
+	return Collide::IsObjectCollideAreaCollideWithRect(obj, NearRect);
+}
+
+bool CObject::IsMoveAble()const
+{
+	return m_bMoveAble;
+}
+
+void CObject::MarkObjectHasBeenCollide()
+{
+	m_stObjState.bHasBeenCollide = TRUE;
+}
+
+void CObject::MarkObjectHasBeenAttack() 
+{
+	m_stObjState.bHasBeenAttack = TRUE;
+}
+
+LPCSTR CObject::GetName() 
+{
+	return m_strName.data();
+}
+
+void CObject::SetName(string Name) 
+{
+	m_strName.clear();
+	m_strName = Name;
+}
+
+//-----------------------------------------------------------
+//Object Collision
+//-----------------------------------------------------------
+CCollideArea* CObject::GetCollideArea()const
+{
+	return m_pAreaCollide;
+}
+
+void CObject::CreateCollideArea(bool Dynamic)
+{
+	m_pAreaCollide = new CCollideArea(CPosition::GetVectorRef());
+
+	g_List_CollideObj.push_back(this);
+}
+
+void CObject::DestroyCollideArea()
+{
+	if (m_pAreaCollide != NULL)
+	{
+		list<CObject*>::iterator iter;
+		for (iter = g_List_CollideObj.begin(); iter != g_List_CollideObj.end(); iter++)
+		{
+			if ((*iter) == this)
+			{
+				(*iter) = NULL;
+				g_List_CollideObj.erase(iter);
+				break;
+			}
+		}
+		SAFE_RELEASE(m_pAreaCollide);
+	}
+}
+
+
+
+//-----------------------------------------------------------
+//Object Update
+//-----------------------------------------------------------
+void CObject::UpdateObject()
+{
+	//Update draw rect
+	m_rectPos = CreateRect({ (long)m_V2Pos.x,(long)m_V2Pos.y }, m_dwWidth, m_dwHeight);
+
+	//Update Collide Area
+	if(m_pAreaCollide!=NULL)
+	m_pAreaCollide->UpdateArea();
+}
+
+void CObject::UpdatePatrolPoint() 
+{
+	m_pointfPatrol = CPosition::GetPosition();
+}
+
+void CObject::ResetState()
+{
+	m_stObjState.ResetState();
+}
+
+
+
+
+
+
+

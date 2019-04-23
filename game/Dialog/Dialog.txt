@@ -1,0 +1,104 @@
+*SCENE TOWN
+{
+
+*DIALOG "0"
+{
+*CHARACTER "KNIGHT" 	"I AM User!!"
+*CHARACTER "NPC"	"I AM AN NPC."
+*CHARACTER "KNIGHT" 	"NICE TO MEET YOU!!"
+}
+
+*DIALOG "1"
+{
+*CHARACTER "KNIGHT" 	"Hi!!"
+*CHARACTER "NPC" 	"Hi,what the matter?"
+*CHARACTER "KNIGHT" 	"Can you tell how do I get to the Magic Academy"
+*CHARACTER "NPC" 	"Tunr Right and go straight"
+*CHARACTER "KNIGHT"	"Many thanks"
+}
+
+*DIALOG "2"
+{
+*CHARACTER "KNIGHT" 	"Hello,I wanna a sharp sword"
+*CHARACTER "NPC" 	"How about this one?"
+*CHARACTER "KNIGHT" 	"Can I have a look?"
+*CHARACTER "NPC" 	"Ok.please"
+*CHARACTER "KNIGHT"	"Wow.. it is so nice."
+}
+
+*DIALOG "Arc0"
+{
+*CHARACTER "Archer" 	"I've got the beast in my sights!"
+}
+*DIALOG "Arc1"
+{
+*CHARACTER "Archer" 	"One shot, one kill."
+}
+*DIALOG "Arc2"
+{
+*CHARACTER "Archer" 	"I have no time for games."
+}
+
+
+*DIALOG "Kni0"
+{
+*CHARACTER "Knight" 	"I am not afraid!" 
+}
+*DIALOG "Kni1"
+{
+*CHARACTER "Knight" 	"Let me face the peril!"
+}
+*DIALOG "Kni2"
+{
+*CHARACTER "Knight" 	"The future is ours! "
+}
+
+
+*DIALOG "Wiz0"
+{
+*CHARACTER "Wizard" 	"You require my assistance? "
+}
+
+*DIALOG "Wiz1"
+{
+*CHARACTER "Wizard" 	"Help me, help you."
+}
+*DIALOG "Wiz2"
+{
+*CHARACTER "Wizard" 	"I thirst for magic."
+}
+
+
+*DIALOG "Ass0"
+{
+*CHARACTER "NPC" 	"My blade be thirsty."
+}
+*DIALOG "Ass1"
+{
+*CHARACTER "NPC" 	"We must act!"
+}
+*DIALOG "Ass2"
+{
+*CHARACTER "NPC" 	"Justice has come."
+}
+
+
+*DIALOG "War0"
+{
+*CHARACTER "NPC" 	"Use my power."
+}
+*DIALOG "War1"
+{
+*CHARACTER "NPC" 	"I will protect you."
+}
+*DIALOG "War2"
+{
+*CHARACTER "NPC" 	"At your call!"
+}
+
+
+
+}
+
+
+

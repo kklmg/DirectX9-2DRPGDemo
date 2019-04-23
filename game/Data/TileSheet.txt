@@ -1,0 +1,67 @@
+*TILESHEETDATA
+{
+
+	*TILESHEET	"WATER"
+	*FILEPATHGROUP
+	{
+		*FILEPATH	"map/tile/TileWater0.bmp"
+		*FILEPATH	"map/tile/TileWater1.bmp"
+	}
+	*SHEETSIZE	13	9
+
+
+	*TILESHEET	"Common"
+	*FILEPATHGROUP
+	{
+		*FILEPATH	"map/tile/TileABC.bmp"
+	}
+	*SHEETSIZE	12	16
+
+
+	*TILESHEET	"basic"
+	*FILEPATHGROUP
+	{
+		*FILEPATH	"map/tile/TileBasic.bmp"
+	}
+	*SHEETSIZE	10	6
+
+	*TILESHEET	"House"
+	*FILEPATHGROUP
+	{
+		*FILEPATH	"map/tile/TileHouse.bmp"
+	}
+	*SHEETSIZE	8	8
+
+
+	*TILESHEET	"Floor"
+	*FILEPATHGROUP
+	{
+		*FILEPATH	"map/tile/TileFloor.bmp"
+	}
+	*SHEETSIZE	8	8
+
+
+	*TILESHEET	"Ground"
+	*FILEPATHGROUP
+	{
+		*FILEPATH	"map/tile/TileA.bmp"
+	}
+	*SHEETSIZE	10	8
+
+
+	*TILESHEET	"Frame"
+	*FILEPATHGROUP
+	{
+		*FILEPATH	"map/tile/TileFrame.bmp"
+	}
+	*SHEETSIZE	3	8
+
+
+	*TILESHEET	"CommonB"
+	*FILEPATHGROUP
+	{
+		*FILEPATH	"map/tile/TileB.bmp"
+	}
+	*SHEETSIZE	8	8
+}
+

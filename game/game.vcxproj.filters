@@ -1,0 +1,724 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Map">
+      <UniqueIdentifier>{010a935e-1a54-4e98-be8f-17c775be5c05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{21c6b142-5cf8-430a-b94f-12812a5c5b54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Function">
+      <UniqueIdentifier>{44c8239c-8418-441d-8ed0-7327ac08c384}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collide">
+      <UniqueIdentifier>{18c537ed-9439-4848-9cf4-cb2b56c53f35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Damage">
+      <UniqueIdentifier>{7b0e588c-fc2f-45e9-a796-7a0d66f7e755}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sound">
+      <UniqueIdentifier>{706185a7-fdcd-49f9-80a2-ef6b1bbf173c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Animation">
+      <UniqueIdentifier>{1e71a9c8-3c9b-4ef4-8203-4e62af58a0aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI &amp;&amp; Display">
+      <UniqueIdentifier>{94b03e6f-8289-4343-8fbe-79e5cd1ce7fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Skill">
+      <UniqueIdentifier>{364d633a-993a-4f20-8c0a-f56d17963b7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effect">
+      <UniqueIdentifier>{e744f4b2-459c-4069-a011-5e1a08314ed7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameManger">
+      <UniqueIdentifier>{8f1f7834-8b7e-4faf-9066-befd256b32ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameSystem">
+      <UniqueIdentifier>{3fded994-e91b-4935-a7fa-811c62b49f6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameSystem\Directx">
+      <UniqueIdentifier>{3989f739-351f-46b5-bbc7-60218972bc06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{8a5acc8f-8f41-44cc-adf3-6c3985a5c674}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\BasicObj">
+      <UniqueIdentifier>{4f731557-9f35-4239-8862-3180febac307}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{12943946-e3dc-484f-a62a-6f64df488d8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Timer">
+      <UniqueIdentifier>{d7f505cd-a410-49bc-b858-a78cfb6d4a94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Animation\Ani_FrameFile">
+      <UniqueIdentifier>{3994e98f-73ce-4544-8014-d4e99e110d5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Animation\Ani_SheetFile">
+      <UniqueIdentifier>{e82ed29a-353b-4494-832f-055d4d8f130f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Animation\Ani_RowFile">
+      <UniqueIdentifier>{f61c6af5-a927-46f9-8eaf-9e0dab39eb9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Missile">
+      <UniqueIdentifier>{276ff7a3-be01-41fd-9986-26de9f12cef1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Obstacle">
+      <UniqueIdentifier>{ec27df4e-b12b-41e9-a0a0-2bae847a2024}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\StillObject">
+      <UniqueIdentifier>{3eed2c55-e590-4c15-9170-0b3534093007}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\StillObject\Building">
+      <UniqueIdentifier>{f652e9e0-dd95-4f2f-9fd2-b2a16c7c93cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AI">
+      <UniqueIdentifier>{cf91235d-a766-41cd-9e19-d91e851b29bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Attribute">
+      <UniqueIdentifier>{8420c720-3478-4ded-889e-73b9e4f147cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Hero">
+      <UniqueIdentifier>{eaa6f00d-f7bb-4dcc-922b-757fbe9ff55a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Hero\Knight">
+      <UniqueIdentifier>{76568ecf-addd-4c2b-a0da-1fa228deb890}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Hero\Archer">
+      <UniqueIdentifier>{1adbf335-59d5-4c64-80ab-f81313e14ccb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Hero\Warrior">
+      <UniqueIdentifier>{95edc3bd-b0d8-47ef-b4f7-d7ddf946ccdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Hero\Assassin">
+      <UniqueIdentifier>{41bc49c5-99ea-444f-9ec2-708383220bda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Hero\Magician">
+      <UniqueIdentifier>{9b1cc2e4-0498-483a-b98d-3049ef790f08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Monster">
+      <UniqueIdentifier>{6d82847a-9eba-4eb9-9851-982cb3126919}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Timer\FpsMng">
+      <UniqueIdentifier>{4767433b-a831-4b7e-b68a-881e5bd0b5da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\ObjectUI">
+      <UniqueIdentifier>{8ee7d5b4-d32d-4622-aa08-14ded643580a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\LivingObj">
+      <UniqueIdentifier>{871b57a1-54ea-4c80-a39f-4ce9a99d5f32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\LivingObj\NPC">
+      <UniqueIdentifier>{622571de-f28a-4db3-9891-30c97797e8fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\LivingObj\ObjectImage">
+      <UniqueIdentifier>{e51cb377-daf7-4c6f-bace-cdb647c60553}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyDataStructure">
+      <UniqueIdentifier>{7f88fbfb-697a-481b-84b4-4f04d24c0581}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog">
+      <UniqueIdentifier>{c52f01e3-e155-42c2-b015-9a8bf429fc13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI &amp;&amp; Display\Text">
+      <UniqueIdentifier>{009394f3-a5b3-4b77-a3df-69260bbab525}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File">
+      <UniqueIdentifier>{a1c36ce5-c67d-44f9-a3b7-f50952d43486}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File\TileMapData">
+      <UniqueIdentifier>{17d49527-2f40-4a59-ac29-8171c77d3b68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File\TileData">
+      <UniqueIdentifier>{add8081b-c5fa-4b84-9363-e40d4248002e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File\SceneData">
+      <UniqueIdentifier>{2118ed5e-4779-44f7-96bb-c20745596214}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\CommonContainer">
+      <UniqueIdentifier>{08929401-89cf-4d53-8f46-e47f4b497a19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map\Tile">
+      <UniqueIdentifier>{11b46790-3631-4e01-8762-5831c0d64454}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEditor">
+      <UniqueIdentifier>{cda0b0c3-8c04-4988-b7eb-7ffc360e8305}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEditor\TileMap">
+      <UniqueIdentifier>{5afe180b-d29d-4c97-b7f8-5ce311d624d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEditor\Tile">
+      <UniqueIdentifier>{3af7bd9b-c772-4d03-bfdd-ea4f15ecf5c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{adba76ab-f95e-43be-b104-b8ddf7400855}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DataBase.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="InitDD.cpp">
+      <Filter>GameSystem\Directx</Filter>
+    </ClCompile>
+    <ClCompile Include="DxMng.cpp">
+      <Filter>GameSystem\Directx</Filter>
+    </ClCompile>
+    <ClCompile Include="collide.cpp">
+      <Filter>Collide</Filter>
+    </ClCompile>
+    <ClCompile Include="HHSound.cpp">
+      <Filter>Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="blit.cpp">
+      <Filter>Function</Filter>
+    </ClCompile>
+    <ClCompile Include="ddutil.cpp">
+      <Filter>Function</Filter>
+    </ClCompile>
+    <ClCompile Include="FpsMng.cpp">
+      <Filter>Timer\FpsMng</Filter>
+    </ClCompile>
+    <ClCompile Include="mainproc.cpp" />
+    <ClCompile Include="effect.cpp">
+      <Filter>Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMng.cpp">
+      <Filter>GameManger</Filter>
+    </ClCompile>
+    <ClCompile Include="InitWindow.cpp">
+      <Filter>GameSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSystem.cpp">
+      <Filter>GameSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="HeroClass.cpp">
+      <Filter>Object\Hero</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterClass.cpp">
+      <Filter>Object\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="NPCClass.cpp">
+      <Filter>Object\LivingObj\NPC</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectClass.cpp">
+      <Filter>Object\BasicObj</Filter>
+    </ClCompile>
+    <ClCompile Include="position.cpp">
+      <Filter>Object\BasicObj</Filter>
+    </ClCompile>
+    <ClCompile Include="InputClass.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="TimerClass.cpp">
+      <Filter>Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="SequenceAni.cpp">
+      <Filter>Animation\Ani_RowFile</Filter>
+    </ClCompile>
+    <ClCompile Include="SheetAni.cpp">
+      <Filter>Animation\Ani_SheetFile</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameAni.cpp">
+      <Filter>Animation\Ani_FrameFile</Filter>
+    </ClCompile>
+    <ClCompile Include="Knight.cpp">
+      <Filter>Object\Hero\Knight</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectMng.cpp">
+      <Filter>GameManger</Filter>
+    </ClCompile>
+    <ClCompile Include="EventMng.cpp">
+      <Filter>GameManger</Filter>
+    </ClCompile>
+    <ClCompile Include="KnightImage.cpp">
+      <Filter>Object\Hero\Knight</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraClass.cpp">
+      <Filter>UI &amp;&amp; Display</Filter>
+    </ClCompile>
+    <ClCompile Include="damage.cpp">
+      <Filter>Damage</Filter>
+    </ClCompile>
+    <ClCompile Include="QuadTree.cpp">
+      <Filter>Collide</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalData.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="BuildingClass.cpp">
+      <Filter>Object\StillObject\Building</Filter>
+    </ClCompile>
+    <ClCompile Include="BuildingImage.cpp">
+      <Filter>Object\StillObject\Building</Filter>
+    </ClCompile>
+    <ClCompile Include="StillObject.cpp">
+      <Filter>Object\StillObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Archer.cpp">
+      <Filter>Object\Hero\Archer</Filter>
+    </ClCompile>
+    <ClCompile Include="ArcherImage.cpp">
+      <Filter>Object\Hero\Archer</Filter>
+    </ClCompile>
+    <ClCompile Include="Assassin.cpp">
+      <Filter>Object\Hero\Assassin</Filter>
+    </ClCompile>
+    <ClCompile Include="Magician.cpp">
+      <Filter>Object\Hero\Magician</Filter>
+    </ClCompile>
+    <ClCompile Include="Warrior.cpp">
+      <Filter>Object\Hero\Warrior</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicBevNode.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AIMng.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectMng.cpp">
+      <Filter>Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="CollideArea.cpp">
+      <Filter>Collide</Filter>
+    </ClCompile>
+    <ClCompile Include="animation.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonSpriteRow.cpp">
+      <Filter>Object\LivingObj\ObjectImage</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonSpriteSheet.cpp">
+      <Filter>Object\LivingObj\ObjectImage</Filter>
+    </ClCompile>
+    <ClCompile Include="RectMath.cpp">
+      <Filter>Function</Filter>
+    </ClCompile>
+    <ClCompile Include="Attribute.cpp">
+      <Filter>Attribute</Filter>
+    </ClCompile>
+    <ClCompile Include="ATTMng.cpp">
+      <Filter>Attribute</Filter>
+    </ClCompile>
+    <ClCompile Include="StateBar.cpp">
+      <Filter>UI &amp;&amp; Display</Filter>
+    </ClCompile>
+    <ClCompile Include="UIManager.cpp">
+      <Filter>UI &amp;&amp; Display</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionNode.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeManager.cpp">
+      <Filter>Timer\FpsMng</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectUI.cpp">
+      <Filter>Object\ObjectUI</Filter>
+    </ClCompile>
+    <ClCompile Include="LivingObjectClass.cpp">
+      <Filter>Object\LivingObj</Filter>
+    </ClCompile>
+    <ClCompile Include="TileMap.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Ornament.cpp">
+      <Filter>Object\StillObject</Filter>
+    </ClCompile>
+    <ClCompile Include="BmpFile.cpp" />
+    <ClCompile Include="Astar.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Text.cpp">
+      <Filter>UI &amp;&amp; Display\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="TextFrame.cpp">
+      <Filter>UI &amp;&amp; Display\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="TextSurface.h.cpp">
+      <Filter>UI &amp;&amp; Display\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogLexer.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogData.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="CTalk.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLexer.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="TokenDefine.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="Lexer.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneFile.cpp">
+      <Filter>File\SceneData</Filter>
+    </ClCompile>
+    <ClCompile Include="TileFile.cpp">
+      <Filter>File\TileData</Filter>
+    </ClCompile>
+    <ClCompile Include="TileSheetFile.cpp">
+      <Filter>File\TileData</Filter>
+    </ClCompile>
+    <ClCompile Include="TileMapFile.cpp">
+      <Filter>File\TileMapData</Filter>
+    </ClCompile>
+    <ClCompile Include="Tile.cpp">
+      <Filter>Map\Tile</Filter>
+    </ClCompile>
+    <ClCompile Include="TileSheet.cpp">
+      <Filter>Map\Tile</Filter>
+    </ClCompile>
+    <ClCompile Include="Mouse.cpp">
+      <Filter>GameSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Convert.cpp">
+      <Filter>Function</Filter>
+    </ClCompile>
+    <ClCompile Include="TileMapEditor.cpp">
+      <Filter>GameEditor\TileMap</Filter>
+    </ClCompile>
+    <ClCompile Include="TilePalette.cpp">
+      <Filter>GameEditor\Tile</Filter>
+    </ClCompile>
+    <ClCompile Include="TileEditor.cpp">
+      <Filter>GameEditor\Tile</Filter>
+    </ClCompile>
+    <ClCompile Include="NPC.cpp">
+      <Filter>Object\LivingObj\NPC</Filter>
+    </ClCompile>
+    <ClCompile Include="EnumFunc.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMng.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneLink.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>UI &amp;&amp; Display</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="GameOver.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeFun.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DataBase.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Global_data.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="InitDD.h">
+      <Filter>GameSystem\Directx</Filter>
+    </ClInclude>
+    <ClInclude Include="DxMng.h">
+      <Filter>GameSystem\Directx</Filter>
+    </ClInclude>
+    <ClInclude Include="collide.h">
+      <Filter>Collide</Filter>
+    </ClInclude>
+    <ClInclude Include="HHSound.h">
+      <Filter>Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="blit.h">
+      <Filter>Function</Filter>
+    </ClInclude>
+    <ClInclude Include="ddutil.h">
+      <Filter>Function</Filter>
+    </ClInclude>
+    <ClInclude Include="FpsMng.h">
+      <Filter>Timer\FpsMng</Filter>
+    </ClInclude>
+    <ClInclude Include="mainproc.h" />
+    <ClInclude Include="effect.h">
+      <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMng.h">
+      <Filter>GameManger</Filter>
+    </ClInclude>
+    <ClInclude Include="InitWindow.h">
+      <Filter>GameSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSystem.h">
+      <Filter>GameSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="HeroClass.h">
+      <Filter>Object\Hero</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterClass.h">
+      <Filter>Object\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="NPCClass.h">
+      <Filter>Object\LivingObj\NPC</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectClass.h">
+      <Filter>Object\BasicObj</Filter>
+    </ClInclude>
+    <ClInclude Include="position.h">
+      <Filter>Object\BasicObj</Filter>
+    </ClInclude>
+    <ClInclude Include="InputClass.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="TimerClass.h">
+      <Filter>Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="SequenceAni.h">
+      <Filter>Animation\Ani_RowFile</Filter>
+    </ClInclude>
+    <ClInclude Include="SheetAni.h">
+      <Filter>Animation\Ani_SheetFile</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameAni.h">
+      <Filter>Animation\Ani_FrameFile</Filter>
+    </ClInclude>
+    <ClInclude Include="Knight.h">
+      <Filter>Object\Hero\Knight</Filter>
+    </ClInclude>
+    <ClInclude Include="KnightImage.h">
+      <Filter>Object\Hero\Knight</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectMng.h">
+      <Filter>GameManger</Filter>
+    </ClInclude>
+    <ClInclude Include="EventMng.h">
+      <Filter>GameManger</Filter>
+    </ClInclude>
+    <ClInclude Include="EnumGroup.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraClass.h">
+      <Filter>UI &amp;&amp; Display</Filter>
+    </ClInclude>
+    <ClInclude Include="damage.h">
+      <Filter>Damage</Filter>
+    </ClInclude>
+    <ClInclude Include="QuadTree.h">
+      <Filter>Collide</Filter>
+    </ClInclude>
+    <ClInclude Include="BuildingClass.h">
+      <Filter>Object\StillObject\Building</Filter>
+    </ClInclude>
+    <ClInclude Include="BuildingImage.h">
+      <Filter>Object\StillObject\Building</Filter>
+    </ClInclude>
+    <ClInclude Include="StillObject.h">
+      <Filter>Object\StillObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Archer.h">
+      <Filter>Object\Hero\Archer</Filter>
+    </ClInclude>
+    <ClInclude Include="ArcherImage.h">
+      <Filter>Object\Hero\Archer</Filter>
+    </ClInclude>
+    <ClInclude Include="Assassin.h">
+      <Filter>Object\Hero\Assassin</Filter>
+    </ClInclude>
+    <ClInclude Include="Magician.h">
+      <Filter>Object\Hero\Magician</Filter>
+    </ClInclude>
+    <ClInclude Include="Warrior.h">
+      <Filter>Object\Hero\Warrior</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicBevNode.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="line.h" />
+    <ClInclude Include="MyStruct.h" />
+    <ClInclude Include="AIMng.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectMng.h">
+      <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="CollideArea.h">
+      <Filter>Collide</Filter>
+    </ClInclude>
+    <ClInclude Include="animation.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonSpriteRow.h">
+      <Filter>Object\LivingObj\ObjectImage</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonSpriteSheet.h">
+      <Filter>Object\LivingObj\ObjectImage</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeManager.h">
+      <Filter>Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="RectMath.h">
+      <Filter>Function</Filter>
+    </ClInclude>
+    <ClInclude Include="Attribute.h">
+      <Filter>Attribute</Filter>
+    </ClInclude>
+    <ClInclude Include="ATTMng.h">
+      <Filter>Attribute</Filter>
+    </ClInclude>
+    <ClInclude Include="StateBar.h">
+      <Filter>UI &amp;&amp; Display</Filter>
+    </ClInclude>
+    <ClInclude Include="UIManager.h">
+      <Filter>UI &amp;&amp; Display</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionNode.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectUI.h">
+      <Filter>Object\ObjectUI</Filter>
+    </ClInclude>
+    <ClInclude Include="LivingObjectClass.h">
+      <Filter>Object\LivingObj</Filter>
+    </ClInclude>
+    <ClInclude Include="TileMap.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Ornament.h">
+      <Filter>Object\StillObject</Filter>
+    </ClInclude>
+    <ClInclude Include="BmpFile.h" />
+    <ClInclude Include="Astar.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="DS\BinaryTree.h">
+      <Filter>MyDataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="DS\Graph.h">
+      <Filter>MyDataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="DS\HashTable.h">
+      <Filter>MyDataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="DS\Heap.h">
+      <Filter>MyDataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="DS\LinkList.h">
+      <Filter>MyDataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="DS\MyNode.h">
+      <Filter>MyDataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="DS\queue.h">
+      <Filter>MyDataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="DS\Search.h">
+      <Filter>MyDataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="DS\Sort.h">
+      <Filter>MyDataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="DS\Stack.h">
+      <Filter>MyDataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Text.h">
+      <Filter>UI &amp;&amp; Display\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="TextFrame.h">
+      <Filter>UI &amp;&amp; Display\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="TextSurface.h">
+      <Filter>UI &amp;&amp; Display\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogLexer.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogToken.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogData.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="CGDefinitions.h" />
+    <ClInclude Include="CTalk.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLexer.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="TokenDefine.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="Lexer.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneFile.h">
+      <Filter>File\SceneData</Filter>
+    </ClInclude>
+    <ClInclude Include="TileFile.h">
+      <Filter>File\TileData</Filter>
+    </ClInclude>
+    <ClInclude Include="TileMapFile.h">
+      <Filter>File\TileMapData</Filter>
+    </ClInclude>
+    <ClInclude Include="TileSheetFile.h">
+      <Filter>File\TileData</Filter>
+    </ClInclude>
+    <ClInclude Include="ConCTN.h">
+      <Filter>Data\CommonContainer</Filter>
+    </ClInclude>
+    <ClInclude Include="Tile.h">
+      <Filter>Map\Tile</Filter>
+    </ClInclude>
+    <ClInclude Include="TileSheet.h">
+      <Filter>Map\Tile</Filter>
+    </ClInclude>
+    <ClInclude Include="Mouse.h">
+      <Filter>GameSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Convert.h">
+      <Filter>Function</Filter>
+    </ClInclude>
+    <ClInclude Include="TileMapEditor.h">
+      <Filter>GameEditor\TileMap</Filter>
+    </ClInclude>
+    <ClInclude Include="TilePalette.h">
+      <Filter>GameEditor\Tile</Filter>
+    </ClInclude>
+    <ClInclude Include="TileEditor.h">
+      <Filter>GameEditor\Tile</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMng.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneLink.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>UI &amp;&amp; Display</Filter>
+    </ClInclude>
+    <ClInclude Include="GameOver.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeFun.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+*TILESHEETDATA
+{
+	*TILESHEET	"Common"
+	*FILEPATHGROUP
+	{
+		*FILEPATH	"map/tile/TileB.bmp"
+	}
+	*SHEETSIZE	8	8
+}
+
