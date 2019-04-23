@@ -1,13 +1,13 @@
 #pragma once
 #include"TextSurface.h"
 #include"SequenceAni.h"
-#include"Dialog.h"
+#include"Dialogue.h"
 #include<vector>
 #include"EnumGroup.h"
 #include"StateBar.h"
 #include"Attribute.h"
 #include"TextFrame.h"
-#include"DialogData.h"
+#include"DialogueData.h"
 
 
 class CUIManager
@@ -35,11 +35,11 @@ public:
 	WORD GetTextWidth(char cr);
 
 	bool IsTalking() const;
-	void TriggerTalk(CDialogChain* dialog);	
+	void TriggerTalk(CDialogueChain* dialog);	
 
 	WORD __DrawText(LPDIRECTDRAWSURFACE7 lpDDSDest,char cr,int left,int top,int bottom);
 	void __DrawText(LPDIRECTDRAWSURFACE7 lpDDSDest, LPCSTR str, RECT rect);
-	bool __DrawDialog(LPDIRECTDRAWSURFACE7 lpDDSDestt, bool AB = FALSE);
+	bool __DrawDialogue(LPDIRECTDRAWSURFACE7 lpDDSDestt, bool AB = FALSE);
 
 private:
 
@@ -55,7 +55,7 @@ private:
 
 	CTextSheet *m_pTextSheet;
 
-	CDialogMng *m_pDigMng;
+	CDialogueMng *m_pDigMng;
 
 	CTFrameMng *m_pTFrameMng;
 

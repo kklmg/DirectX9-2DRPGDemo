@@ -118,9 +118,6 @@
     <Filter Include="MyDataStructure">
       <UniqueIdentifier>{7f88fbfb-697a-481b-84b4-4f04d24c0581}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Dialog">
-      <UniqueIdentifier>{c52f01e3-e155-42c2-b015-9a8bf429fc13}</UniqueIdentifier>
-    </Filter>
     <Filter Include="UI &amp;&amp; Display\Text">
       <UniqueIdentifier>{009394f3-a5b3-4b77-a3df-69260bbab525}</UniqueIdentifier>
     </Filter>
@@ -153,6 +150,9 @@
     </Filter>
     <Filter Include="Scene">
       <UniqueIdentifier>{adba76ab-f95e-43be-b104-b8ddf7400855}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialogue">
+      <UniqueIdentifier>{c52f01e3-e155-42c2-b015-9a8bf429fc13}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -329,9 +329,6 @@
     <ClCompile Include="Astar.cpp">
       <Filter>AI</Filter>
     </ClCompile>
-    <ClCompile Include="Dialog.cpp">
-      <Filter>Dialog</Filter>
-    </ClCompile>
     <ClCompile Include="Text.cpp">
       <Filter>UI &amp;&amp; Display\Text</Filter>
     </ClCompile>
@@ -341,14 +338,8 @@
     <ClCompile Include="TextSurface.h.cpp">
       <Filter>UI &amp;&amp; Display\Text</Filter>
     </ClCompile>
-    <ClCompile Include="DialogLexer.cpp">
-      <Filter>Dialog</Filter>
-    </ClCompile>
-    <ClCompile Include="DialogData.cpp">
-      <Filter>Dialog</Filter>
-    </ClCompile>
     <ClCompile Include="CTalk.cpp">
-      <Filter>Dialog</Filter>
+      <Filter>Dialogue</Filter>
     </ClCompile>
     <ClCompile Include="MyLexer.cpp">
       <Filter>File</Filter>
@@ -418,6 +409,15 @@
     </ClCompile>
     <ClCompile Include="ChangeFun.cpp">
       <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialogue.cpp">
+      <Filter>Dialogue</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogueData.cpp">
+      <Filter>Dialogue</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogueLexer.cpp">
+      <Filter>Dialogue</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -542,7 +542,6 @@
     <ClInclude Include="BasicBevNode.h">
       <Filter>AI</Filter>
     </ClInclude>
-    <ClInclude Include="line.h" />
     <ClInclude Include="MyStruct.h" />
     <ClInclude Include="AIMng.h">
       <Filter>AI</Filter>
@@ -629,9 +628,6 @@
     <ClInclude Include="DS\Stack.h">
       <Filter>MyDataStructure</Filter>
     </ClInclude>
-    <ClInclude Include="Dialog.h">
-      <Filter>Dialog</Filter>
-    </ClInclude>
     <ClInclude Include="Text.h">
       <Filter>UI &amp;&amp; Display\Text</Filter>
     </ClInclude>
@@ -641,18 +637,9 @@
     <ClInclude Include="TextSurface.h">
       <Filter>UI &amp;&amp; Display\Text</Filter>
     </ClInclude>
-    <ClInclude Include="DialogLexer.h">
-      <Filter>Dialog</Filter>
-    </ClInclude>
-    <ClInclude Include="DialogToken.h">
-      <Filter>Dialog</Filter>
-    </ClInclude>
-    <ClInclude Include="DialogData.h">
-      <Filter>Dialog</Filter>
-    </ClInclude>
     <ClInclude Include="CGDefinitions.h" />
     <ClInclude Include="CTalk.h">
-      <Filter>Dialog</Filter>
+      <Filter>Dialogue</Filter>
     </ClInclude>
     <ClInclude Include="MyLexer.h">
       <Filter>File</Filter>
@@ -716,6 +703,18 @@
     </ClInclude>
     <ClInclude Include="ChangeFun.h">
       <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogue.h">
+      <Filter>Dialogue</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogueData.h">
+      <Filter>Dialogue</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogueLexer.h">
+      <Filter>Dialogue</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogueToken.h">
+      <Filter>Dialogue</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

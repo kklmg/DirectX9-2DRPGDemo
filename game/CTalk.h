@@ -1,5 +1,5 @@
 #pragma once
-#include"DialogData.h"
+#include"DialogueData.h"
 #include<vector>
 
 class CTalk
@@ -8,13 +8,13 @@ public:
 	CTalk();
 	~CTalk();
 
-	CDialogChain* GetDialog(int i=0);
-	CDialogChain* GetDialogRand();
+	CDialogueChain* GetDialogue(int i=0);
+	CDialogueChain* GetDialogueRand();
 
-	void SetDialog(CDialogChain* dialog);
-	void ClearDialog();
+	void SetDialogue(CDialogueChain* dialog);
+	void ClearDialogue();
 
 private:
-	std::vector<CDialogChain*>m_vectorDialog;
+	std::vector<CDialogueChain*>m_vectorDialogue;
 };	
 

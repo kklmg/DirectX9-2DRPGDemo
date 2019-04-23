@@ -1,0 +1,61 @@
+[게임 관련]
+게임유형: 액션RPG 
+
+[제작 관련]
+사용언어: c++
+사용API: DirectX
+
+[조작방법]
+KEY: left/right/up/down 		캐릭터이동
+KEY: left_shift + left/right/up/down	캐릭터 달리기
+KEY: TAB 				캐릭터 바꾸기
+KEY: J 					캐릭터 공격
+KEY: ESC				게임 탈출
+
+[주요실현]
+1.게임내 오브젝트 클래스 설계 
+파일: ObjectClass.h,ObjectClass.cpp
+
+
+2.타일 및 타일맵 구현
+파일: Tile.h,Tile.cpp
+     TileMap.h,TileMap.cpp
+
+
+3.QuadTree구조로 게임내 충돌방지 구현
+파일: QuadTree.h,QuadTree.cpp
+
+
+4.BehaviorTree 구조로 게임내AI 구현
+파일: BasicBevNode.h,BasicBevNode.cpp,
+     ActionNode.h,ActionNode.cpp
+
+
+5.A*길찾기 알고리즘 구현
+파일: Astar.h,Astar.cpp
+
+
+6.Fade in/out,GrayScale,Alphablend 등 특수효과 구현
+파일: effect.h,effect.cpp
+
+
+7.게임내 NPC와 대화기능 구현
+파일: Dialogue.h,Dialogue.cpp
+
+
+8.파일 렉서 파서 설계 및 구현
+파일: MyLexer.h,MyLexer.cpp
+
+
+9.타일 및 타일맵 에디터 구현
+파일: TileEditor.h,TileEditor.cpp
+     TileMapEditor.h,TileMapEditor.cpp
+
+
+[기본 프로세스]
+1.카메라 업데이트->2.타일맵 출력->3.쿼드트리 업데이트->4.이벤트 업데이트->5.AI 업데이트->6.오브젝트 출력
+파일: SceneMng.cpp,
+라인: 248
+함수: bool CSceneMng::DrawScene()
+
+

@@ -12,25 +12,17 @@ using namespace std;
 //Include My Head File
 //-----------------------------------------------------------
 #include"DataBase.h"
-
 #include"QuadTree.h"
-
 #include"ObjectMng.h"
 #include"AIMng.h"
 #include"EffectMng.h"
-
 #include"TileMap.h"
 #include"TileSheet.h"
-
 #include"SceneLink.h"
-
 #include"CameraClass.h"
-
 #include"TextSurface.h"
-
 #include"HHSound.h"
-
-#include"DialogData.h"
+#include"DialogueData.h"
 
 
 
@@ -204,7 +196,7 @@ private:
 	//Dialog
 	//-----------------------------------------------------------
 	private:
-	CDialogDataMng *m_pDigDataMng;
+	CDialogueDataMng *m_pDigDataMng;
 
 	//-----------------------------------------------------------
 	//About Scene

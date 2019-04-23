@@ -162,9 +162,9 @@
     <ClCompile Include="ChangeFun.cpp" />
     <ClCompile Include="Convert.cpp" />
     <ClCompile Include="CTalk.cpp" />
-    <ClCompile Include="Dialog.cpp" />
-    <ClCompile Include="DialogData.cpp" />
-    <ClCompile Include="DialogLexer.cpp" />
+    <ClCompile Include="Dialogue.cpp" />
+    <ClCompile Include="DialogueData.cpp" />
+    <ClCompile Include="DialogueLexer.cpp" />
     <ClCompile Include="EnumFunc.cpp" />
     <ClCompile Include="GameOver.cpp" />
     <ClCompile Include="Lexer.cpp" />
@@ -256,10 +256,10 @@
     <ClInclude Include="GameOver.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="TilePalette.h" />
-    <ClInclude Include="Dialog.h" />
-    <ClInclude Include="DialogData.h" />
-    <ClInclude Include="DialogLexer.h" />
-    <ClInclude Include="DialogToken.h" />
+    <ClInclude Include="Dialogue.h" />
+    <ClInclude Include="DialogueData.h" />
+    <ClInclude Include="DialogueLexer.h" />
+    <ClInclude Include="DialogueToken.h" />
     <ClInclude Include="DS\BinaryTree.h" />
     <ClInclude Include="DS\Graph.h" />
     <ClInclude Include="DS\HashTable.h" />
@@ -303,7 +303,6 @@
     <ClInclude Include="Knight.h" />
     <ClInclude Include="KnightImage.h" />
     <ClInclude Include="LivingObjectClass.h" />
-    <ClInclude Include="line.h" />
     <ClInclude Include="Magician.h" />
     <ClInclude Include="MyStruct.h" />
     <ClInclude Include="QuadTree.h" />

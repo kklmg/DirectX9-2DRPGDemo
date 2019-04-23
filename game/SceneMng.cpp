@@ -92,8 +92,8 @@ bool CSceneMng::Init()
 	m_pEffectMng = new CEffectMng();
 	m_pEffectMng->Init();
 
-	m_pDigDataMng= new CDialogDataMng();
-	m_pDigDataMng->Parsing("Dialog/Dialog.txt");
+	m_pDigDataMng= new CDialogueDataMng();
+	m_pDigDataMng->Parsing("Dialogue/Dialogue.txt");
 
 	InitSceneContainer();
 
@@ -148,41 +148,41 @@ void CSceneMng::PreCreate()
 			cr_x,
 			cr_y, eForFriend, TRUE);
 	g_pControledObj = knight;
-	knight->SetDialog(m_pDigDataMng->GetDialogChain("Kni0"));
-	knight->SetDialog(m_pDigDataMng->GetDialogChain("Kni1"));
-	knight->SetDialog(m_pDigDataMng->GetDialogChain("Kni2"));
+	knight->SetDialogue(m_pDigDataMng->GetDialogueChain("Kni0"));
+	knight->SetDialogue(m_pDigDataMng->GetDialogueChain("Kni1"));
+	knight->SetDialogue(m_pDigDataMng->GetDialogueChain("Kni2"));
 
 	CLivingObj *archer =
 		m_pObjMng->CreateHero(eArcher,
 			cr_x,
 			cr_y, eForFriend, TRUE);
-	archer->SetDialog(m_pDigDataMng->GetDialogChain("Arc0"));
-	archer->SetDialog(m_pDigDataMng->GetDialogChain("Arc1"));
-	archer->SetDialog(m_pDigDataMng->GetDialogChain("Arc2"));
+	archer->SetDialogue(m_pDigDataMng->GetDialogueChain("Arc0"));
+	archer->SetDialogue(m_pDigDataMng->GetDialogueChain("Arc1"));
+	archer->SetDialogue(m_pDigDataMng->GetDialogueChain("Arc2"));
 
 	CLivingObj *assassin =
 		m_pObjMng->CreateHero(eAssasin,
 			cr_x,
 			cr_y, eForFriend, TRUE);
-	assassin->SetDialog(m_pDigDataMng->GetDialogChain("Ass0"));
-	assassin->SetDialog(m_pDigDataMng->GetDialogChain("Ass1"));
-	assassin->SetDialog(m_pDigDataMng->GetDialogChain("Ass2"));
+	assassin->SetDialogue(m_pDigDataMng->GetDialogueChain("Ass0"));
+	assassin->SetDialogue(m_pDigDataMng->GetDialogueChain("Ass1"));
+	assassin->SetDialogue(m_pDigDataMng->GetDialogueChain("Ass2"));
 
 	CLivingObj *magician =
 		m_pObjMng->CreateHero(eMagician,
 			cr_x,
 			cr_y, eForFriend, TRUE);
-	magician->SetDialog(m_pDigDataMng->GetDialogChain("Wiz0"));
-	magician->SetDialog(m_pDigDataMng->GetDialogChain("Wiz1"));
-	magician->SetDialog(m_pDigDataMng->GetDialogChain("Wiz2"));
+	magician->SetDialogue(m_pDigDataMng->GetDialogueChain("Wiz0"));
+	magician->SetDialogue(m_pDigDataMng->GetDialogueChain("Wiz1"));
+	magician->SetDialogue(m_pDigDataMng->GetDialogueChain("Wiz2"));
 
 	CLivingObj *warrior =
 		m_pObjMng->CreateHero(eWarrior,
 			cr_x,
 			cr_y, eForFriend, TRUE);
-	warrior->SetDialog(m_pDigDataMng->GetDialogChain("War0"));
-	warrior->SetDialog(m_pDigDataMng->GetDialogChain("War1"));
-	warrior->SetDialog(m_pDigDataMng->GetDialogChain("War2"));
+	warrior->SetDialogue(m_pDigDataMng->GetDialogueChain("War0"));
+	warrior->SetDialogue(m_pDigDataMng->GetDialogueChain("War1"));
+	warrior->SetDialogue(m_pDigDataMng->GetDialogueChain("War2"));
 
 
 	//Behavior Setting
@@ -308,7 +308,7 @@ bool CSceneMng::DrawScene()
 		{
 			if (DIKEYDOWNONCE(DIK_SPACE))
 			{
-				CDialogChain* Dialog = g_pControledObj->TryTalk();
+				CDialogueChain* Dialog = g_pControledObj->TryTalk();
 				if (Dialog != NULL)
 				{
 					g_pUIMng->TriggerTalk(Dialog);
@@ -462,7 +462,7 @@ bool CSceneMng::DrawScene()
 		g_pDDSBack->Blt(&DrawRect, m_pSceneSuf, &m_pCamera->GetCameraRect(), DDBLT_WAIT, NULL);
 
 		if(!m_bSceChanging) g_pUIMng->DrawStateBar();
-		g_pUIMng->__DrawDialog(g_pDDSBack,true);
+		g_pUIMng->__DrawDialogue(g_pDDSBack,true);
 		
 		
 

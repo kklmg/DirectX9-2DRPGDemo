@@ -573,7 +573,7 @@ CLivingObj* CLivingObj::GetNearestObj(std::list<CLivingObj*>&_list)
 	return Target;
 }
 
-CDialogChain* CLivingObj::TryTalk()
+CDialogueChain* CLivingObj::TryTalk()
 {
 	STCircle Cir = GetCircleInvRect(m_rectDraw);
 
@@ -587,7 +587,7 @@ CDialogChain* CLivingObj::TryTalk()
 	{
 		for (iter = tempList.begin(); iter != tempList.end();)
 		{
-			if ((*iter)->GetDialog() == NULL)
+			if ((*iter)->GetDialogue() == NULL)
 			{
 				tempList.erase(iter++);
 			}
@@ -599,7 +599,7 @@ CDialogChain* CLivingObj::TryTalk()
 		{
 			CLivingObj* Target = GetNearestObj(tempList);
 			Target->FaceToPoint(this->GetPosition());
-			return Target->GetDialogRand();
+			return Target->GetDialogueRand();
 		}
 	}
 }

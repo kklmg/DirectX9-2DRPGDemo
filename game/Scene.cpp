@@ -74,23 +74,46 @@ bool CSceneMng::CS_Town()
 	CNPC *pNPC = NULL;
 
 	pNPC = m_pObjMng->CreateNpc(eNPC_01, 100, 400);
-	pNPC->SetDialog(m_pDigDataMng->GetDialogChain("0"));
+	pNPC->SetDialogue(m_pDigDataMng->GetDialogueChain("0"));
 
 	pNPC = m_pObjMng->CreateNpc(eNPC_02, 150, 400);
-	pNPC->SetDialog(m_pDigDataMng->GetDialogChain("1"));
+	pNPC->SetDialogue(m_pDigDataMng->GetDialogueChain("1"));
 
 	pNPC = m_pObjMng->CreateNpc(eNPC_03, 200, 400);
-	pNPC->SetDialog(m_pDigDataMng->GetDialogChain("2"));
+	pNPC->SetDialogue(m_pDigDataMng->GetDialogueChain("2"));
 
-	m_pObjMng->CreateNpc(eNPC_03, 800, 400);
-	m_pObjMng->CreateNpc(eNPC_04, 850, 400);
-	m_pObjMng->CreateNpc(eNPC_05, 900, 400);
-	m_pObjMng->CreateNpc(eNPC_06, 350, 800);
-	m_pObjMng->CreateNpc(eNPC_07, 400, 800);
-	m_pObjMng->CreateNpc(eNPC_08, 800, 800);
-	m_pObjMng->CreateNpc(eNPC_09, 850, 800);
-	m_pObjMng->CreateNpc(eNPC_AS, 900, 800);
-
+	pNPC = m_pObjMng->CreateNpc(eNPC_03, 800, 400);
+	pNPC->SetDialogue(m_pDigDataMng->GetDialogueChain("Default00"));
+	pNPC->SetDialogue(m_pDigDataMng->GetDialogueChain("Default01"));
+	pNPC->SetDialogue(m_pDigDataMng->GetDialogueChain("Default02"));
+	pNPC = m_pObjMng->CreateNpc(eNPC_04, 850, 400);
+	pNPC->SetDialogue(m_pDigDataMng->GetDialogueChain("Default00"));
+	pNPC->SetDialogue(m_pDigDataMng->GetDialogueChain("Default01"));
+	pNPC->SetDialogue(m_pDigDataMng->GetDialogueChain("Default02"));
+	pNPC = m_pObjMng->CreateNpc(eNPC_05, 900, 400);
+	pNPC->SetDialogue(m_pDigDataMng->GetDialogueChain("Default00"));
+	pNPC->SetDialogue(m_pDigDataMng->GetDialogueChain("Default01"));
+	pNPC->SetDialogue(m_pDigDataMng->GetDialogueChain("Default02"));
+	pNPC = m_pObjMng->CreateNpc(eNPC_06, 350, 800);
+	pNPC->SetDialogue(m_pDigDataMng->GetDialogueChain("Default00"));
+	pNPC->SetDialogue(m_pDigDataMng->GetDialogueChain("Default01"));
+	pNPC->SetDialogue(m_pDigDataMng->GetDialogueChain("Default02"));
+	pNPC = m_pObjMng->CreateNpc(eNPC_07, 400, 800);
+	pNPC->SetDialogue(m_pDigDataMng->GetDialogueChain("Default00"));
+	pNPC->SetDialogue(m_pDigDataMng->GetDialogueChain("Default01"));
+	pNPC->SetDialogue(m_pDigDataMng->GetDialogueChain("Default02"));
+	pNPC = m_pObjMng->CreateNpc(eNPC_08, 800, 800);
+	pNPC->SetDialogue(m_pDigDataMng->GetDialogueChain("Default00"));
+	pNPC->SetDialogue(m_pDigDataMng->GetDialogueChain("Default01"));
+	pNPC->SetDialogue(m_pDigDataMng->GetDialogueChain("Default02"));
+	pNPC = m_pObjMng->CreateNpc(eNPC_09, 850, 800);
+	pNPC->SetDialogue(m_pDigDataMng->GetDialogueChain("Default00"));
+	pNPC->SetDialogue(m_pDigDataMng->GetDialogueChain("Default01"));
+	pNPC->SetDialogue(m_pDigDataMng->GetDialogueChain("Default02"));
+	pNPC = m_pObjMng->CreateNpc(eNPC_AS, 900, 800);
+	pNPC->SetDialogue(m_pDigDataMng->GetDialogueChain("Default00"));
+	pNPC->SetDialogue(m_pDigDataMng->GetDialogueChain("Default01"));
+	pNPC->SetDialogue(m_pDigDataMng->GetDialogueChain("Default02"));
 
 
 	//----------------
@@ -153,10 +176,7 @@ bool CSceneMng::CS_Forest_1()
 	//g_pTestdObj01=CreateMonster({ 600,200 }, eMRabbit, eForHostile, FALSE);
 	CreateMonster({ 600,200 }, eMRabbit, eForHostile, FALSE);
 	CreateMonster({ 500,200 }, eMRabbit, eForHostile, FALSE);
-	CreateMonster({ 400,200 }, eMRabbit, eForHostile, FALSE);
-	CreateMonster({ 300,200 }, eMRabbit, eForHostile, FALSE);
-	CreateMonster({ 200,200 }, eMRabbit, eForHostile, FALSE);
-	CreateMonster({ 100,200 }, eMRabbit, eForHostile, FALSE);
+
 	CreateMonster({ 600,400 }, eMRabbit, eForHostile, FALSE);
 	CreateMonster({ 600,600 }, eMRabbit, eForHostile, FALSE);
 	CreateMonster({ 600,800 }, eMRabbit, eForHostile, FALSE);
@@ -310,7 +330,7 @@ bool CSceneMng::CS_InSmith()
 
 	CNPC *pNPC = NULL;
 	pNPC = m_pObjMng->CreateNpc(eNPC_03, 200, 400);
-	pNPC->SetDialog(m_pDigDataMng->GetDialogChain("2"));
+	pNPC->SetDialogue(m_pDigDataMng->GetDialogueChain("2"));
 
 	return TRUE;
 }

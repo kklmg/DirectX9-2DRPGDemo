@@ -3,31 +3,31 @@
 
 CTalk::CTalk()
 {
-	m_vectorDialog.reserve(5);
+	m_vectorDialogue.reserve(5);
 }
 CTalk::~CTalk()
 {
 }
 
-void CTalk::SetDialog(CDialogChain* dialog)
+void CTalk::SetDialogue(CDialogueChain* dialog)
 {
-	m_vectorDialog.push_back(dialog);
+	m_vectorDialogue.push_back(dialog);
 }
-void CTalk::ClearDialog()
+void CTalk::ClearDialogue()
 {
-	m_vectorDialog.clear();
+	m_vectorDialogue.clear();
 }
 
-CDialogChain* CTalk::GetDialog(int i)
+CDialogueChain* CTalk::GetDialogue(int i)
 {
-	if (i >= m_vectorDialog.size())return NULL;
-	else return m_vectorDialog[i];
+	if (i >= m_vectorDialogue.size())return NULL;
+	else return m_vectorDialogue[i];
 }
-CDialogChain* CTalk::GetDialogRand()
+CDialogueChain* CTalk::GetDialogueRand()
 {
-	if (m_vectorDialog.size() == 0)return NULL;
+	if (m_vectorDialogue.size() == 0)return NULL;
 
-	int index = rand() % m_vectorDialog.size();
+	int index = rand() % m_vectorDialogue.size();
 
-	return m_vectorDialog[index];
+	return m_vectorDialogue[index];
 }

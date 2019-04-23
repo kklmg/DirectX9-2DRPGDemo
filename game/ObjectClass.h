@@ -74,8 +74,6 @@ public:
 public:
 	CCollideArea* GetCollideArea()const;
 
-	bool DrawCollideArea(LPDIRECTDRAWSURFACE7 suf);//_______Used In Test
-
 protected:
 	void CreateCollideArea(bool IsDynamic = FALSE);
 	void DestroyCollideArea();

@@ -32,7 +32,7 @@ void CUIManager::Init()
 
 	InitTextSheet();
 
-	m_pDigMng = new CDialogMng();
+	m_pDigMng = new CDialogueMng();
 	m_pDigMng->Init();
 
 	InitEmoticon();
@@ -115,12 +115,12 @@ bool CUIManager::IsTalking() const
 	return m_bTalking;
 }
 
-void CUIManager::TriggerTalk(CDialogChain* dialog) 
+void CUIManager::TriggerTalk(CDialogueChain* dialog) 
 {
 	if (m_bTalking == FALSE)
 	{
 		m_pDigMng->reset();
-		m_pDigMng->LoadDialog(dialog);
+		m_pDigMng->LoadDialogue(dialog);
 		m_bTalking = TRUE;
 	}
 }
@@ -140,7 +140,7 @@ void CUIManager::__DrawText(LPDIRECTDRAWSURFACE7 lpDDSDest, LPCSTR str, RECT rec
 	m_pTFrameMng->Draw(str, lpDDSDest, rect);
 }
 
-bool CUIManager::__DrawDialog(LPDIRECTDRAWSURFACE7 lpDDSDest, bool AB)
+bool CUIManager::__DrawDialogue(LPDIRECTDRAWSURFACE7 lpDDSDest, bool AB)
 {
 	if (!m_bTalking)return FALSE;
 
@@ -148,10 +148,10 @@ bool CUIManager::__DrawDialog(LPDIRECTDRAWSURFACE7 lpDDSDest, bool AB)
 	{
 		g_bGamePause = TRUE;
 
-		if (AB)  m_pDigMng->DrawDialogBox_AB(lpDDSDest);
-		else  m_pDigMng->DrawDialogBox(lpDDSDest);
+		if (AB)  m_pDigMng->DrawDialogueBox_AB(lpDDSDest);
+		else  m_pDigMng->DrawDialogueBox(lpDDSDest);
 
-		if (!m_pDigMng->DrawDialog_Dynamic(lpDDSDest))
+		if (!m_pDigMng->DrawDialogue_Dynamic(lpDDSDest))
 		{
 			g_bGamePause = FALSE;
 			m_bTalking = FALSE;

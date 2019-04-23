@@ -82,7 +82,7 @@ public:
 	CLivingObj *GetNearestObj(std::list<CLivingObj*>&list);
 
 
-	CDialogChain* TryTalk();
+	CDialogueChain* TryTalk();
 
 protected:
 	STPathUpdate m_stPathUpdate;
